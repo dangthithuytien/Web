@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Đăng Ký</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        background-image: url("img/f146-ieaiqii7755867-15675266286609957238.webp");
+      }
+
+      form {
+        background-color: #bcf5b3;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 50px auto;
+      }
+
+      input,
+      select {
+        width: calc(100% - 10px);
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #2c0303;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      .Dangki:hover {
+        background-color: #45a049;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #45a049;
+        font-weight: bold;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>Đăng Ký</h2>
+      <label for="fullname">Họ Tên:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="dob">Ngày Sinh:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="gender">Giới Tính:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Nam</option>
+        <option value="female">Nữ</option>
+        <option value="other">Khác</option>
+      </select>
+
+      <label for="hometown">Quê Quán:</label>
+      <input type="text" id="hometown" name="hometown" required />
+
+      <label for="idcard">Căn Cước/CMND:</label>
+      <input type="text" id="idcard" name="idcard" required />
+
+      <label for="phone">Số Điện Thoại:</label>
+      <input type="text" id="phone" name="phone" required />
+
+      <label for="password">Mật khẩu tài khoản:</label>
+      <input type="password" id="password" name="password" required />
+
+      <input class="Dangki" type="submit" value="Đăng Ký" />
+    </form>
+  </body>
+</html>

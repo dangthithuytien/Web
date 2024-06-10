@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Đăng Nhập</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("img/C4.jpeg");
+      }
+
+      .login-container {
+        background-color: #c8edb4;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: calc(100% - 10px);
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .remember-me {
+        margin-bottom: 10px;
+      }
+
+      .forgot-password {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Đăng Nhập</h2>
+      <form>
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required />
+
+        <div class="remember-me">
+          <input type="checkbox" id="remember" name="remember" />
+          <label for="remember">Ghi nhớ</label>
+        </div>
+
+        <input type="submit" value="Đăng Nhập" />
+
+        <div class="forgot-password">
+          <a href="#">Quên mật khẩu?</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
